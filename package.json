@@ -1,0 +1,25 @@
+{
+  "name": "simple-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.conf.js",
+  "scripts": {
+    "e2e-test": "nightwatch",
+    "api_test": "npm run e2e-test -- features/api_tests.feature --env silent_chrome",
+    "ui_test": "npm run e2e-test -- features/ui_tests.feature --env chrome"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "nightwatch-cucumber": "^9.1.2",
+    "selenium-server": "^3.10.0",
+    "webdriver-manager": "^12.1.7"
+  },
+  "devDependencies": {
+    "chromedriver": "^76.0.1",
+    "cucumber": "^4.2.1",
+    "cucumber-pretty": "^1.5.2",
+    "nightwatch": "^0.9.21",
+    "nightwatch-api": "^3.0.1",
+    "nightwatch-custom-commands-assertions": "^1.1.1"
+  }
+}
